@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #232427;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    /* width: 100vw; */
+}
+
+.container {
+    /* background: #232427; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    min-width: 100vw;
+    margin: 40px 0;
+    /* border: 2px solid cyan; */
+}
+
+.container .card {
+    /* border: 2px solid red; */
+    position: relative;
+    min-width: 320px;
+    height: 440px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2), inset -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.3), 5px 5px 15px rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+}
+
+.container .card .box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    background: #2a2b2f;
+    border: 2px solid #1e1f23;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container .card .box:hover {
+    transform: translateY(-50px);
+    box-shadow: 0 40px 70px rgba(0, 0, 0, 0.5);
+}
+
+.container .card .box .content {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-weight: 300px;
+    visibility: hidden;
+}
+
+.container .card .box .content h3 {
+    position: absolute;
+    top: 20px;
+    left: 25%;
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.1);
+}
+
+.container .card .box .imag {
+    overflow: hidden;
+    width: 17rem;
+    height: 420px;
+    position: absolute;
+    background: cover;
+    visibility: visible;
+    z-index: 1;
+}
+
+.container .card .box .content p {
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    left: 50px;
+}
+
+.container .card .box:hover img {
+    /* opacity: 1; */
+    visibility: hidden;
+}
+
+.container .card .box:hover .content {
+    visibility: visible;
+}
+
+.container .card .box .content a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: #000;
+    margin-top: 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 400px;
+    /* color: white; */
+    top: 8rem;
+}
+
+.container .card:nth-child(1) .box .content a {
+    color: yellow;
+}
+
+.container .card:nth-child(2) .box .content a {
+    color: cyan;
+}
+
+.container .card:nth-child(3) .box .content a {
+    color: rgb(255, 71, 101);
+}
+
+.container .card:nth-child(4) .box .content a {
+    color: rgb(71, 114, 255);
+}
+
+.container .card:nth-child(5) .box .content a {
+    color: rgb(182, 0, 36);
+}
+
+.container .card:nth-child(1) .box .content a {
+    color: yellow;
+}
+
+.container .card:nth-child(2) .box .content a {
+    color: cyan;
+}
+
+.container .card:nth-child(3) .box .content a {
+    color: rgb(255, 71, 101);
+}
+
+.container .card:nth-child(4) .box .content a {
+    color: rgb(71, 114, 255);
+}
+
+.container .card:nth-child(5) .box .content a {
+    color: rgb(182, 0, 36);
+}
